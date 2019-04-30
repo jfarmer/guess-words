@@ -71,4 +71,4 @@ See [data/kjv](data/kjv).  You can supply your own training corpus with the `-d`
 
 [john-goldsmith]: http://people.cs.uchicago.edu/~jagoldsm/
 [wiki-viterbi]: https://en.wikipedia.org/wiki/Viterbi_algorithm
-[wiki-log-probability]
+[wiki-log-probability]: https://en.wikipedia.org/wiki/Log_probability
