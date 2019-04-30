@@ -1,10 +1,10 @@
 # Guess Words
 
-This is a 15-year-old old college project of mine from [John Goldsmith's](john-goldsmith) introductory computational linguistics course.
+This is a 15-year-old old college project of mine from [John Goldsmith's][john-goldsmith] introductory computational linguistics course.
 
 It uses statistical techniques to produce the most likely sequence of words from a stream of unbroken characters.
 
-The statistical model of word boundaries is a naïve unigram model create from training data.  It uses the [Viterbi algorithm](wiki-viterbi) to generate the most likely sequence of words given the unbroken string of characters.
+The statistical model of word boundaries is a naïve unigram model create from training data.  It uses the [Viterbi algorithm][wiki-viterbi] to generate the most likely sequence of words given the unbroken string of characters.
 
 ## NOTE!!!
 
@@ -57,7 +57,7 @@ Parsing string "whenwilltheygethere"...done
 $
 ```
 
-Internally, the probabilities are stored as [log probabilities](wiki-log-probability), which is a common technique to handle small probabilities.  If your probabilities are very small and you use them normally, then the product of many small probabilities is likely to end up being `0` as a float/double.
+Internally, the probabilities are stored as [log probabilities][wiki-log-probability], which is a common technique to handle small probabilities.  If your probabilities are very small and you use them normally, then the product of many small probabilities is likely to end up being `0` as a float/double.
 
 The "singleton plog" is the log probability of a word we haven't seen in our training corpus. It is `log(1 / wordsInTrainingCorpus)`, i.e., we act "as if" we've seen any word once.
 
